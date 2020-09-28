@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>`
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+  <div class="container jumbotron">
+    <div class="displayImgcenter">
+      <img src="ClimateConnectLogo.jpg" class="Image" alt="Image">
+    </div>
+
+    <div class="row showAllButton" >
+      <button type='button' class="btn btn-success " onclick=showAllFunction()>Show All Result</button>
+    </div>
+
+
+    <div class="row displayCenterflex" >
+        <input type="text" onchange=splitWordsInput(this.value) placeholder="Enter String">
+        <button type='button' class="btn btn-success " onclick=splitWords()>Split Words</button>
+    </div>
+
+    <hr>
+    <div class="row displayCenterflex">
+      <input type="text" onchange=captalizeWordInput(this.value) class="center-block" placeholder="Enter Array of Word">
+      <button type='button' class="btn btn-info " onclick=captalizeWord()>Captalize Words</button>
+    </div>
+    <hr>
+    <div class="row displayCenterflex">
+      <input type="text" onchange=lowerCaseVariableInput(this.value) placeholder="Enter Array of Word">
+      <button type='button' class="btn btn-primary " onclick=lowerCaseWord()>LowerCase Words</button>
+    </div>
+    <hr>
+    <div class="row displayCenterflex">
+      <input type="text" onchange=firstLetterInput(this.value) placeholder="Enter Array of Word">
+      <button type='button' class="btn btn-warning " onclick=firstLetter()>Display First letter</button>
+    </div>
+    <hr>
+    <div class="row displayCenterflex">
+      <input type="text" onchange=SearchArrayInput(this.value) placeholder="Enter Array of Word">
+      <input type="text" onchange=SearchArrayInputVar(this.value) placeholder="Enter Search Letter">
+      <button type='button' class="btn btn-danger " onclick=SearchArray()>Search Word</button>
+    </div>
+   <hr>
+    <div class="row displayCenterflex">
+      <input type="text" onchange=SearchArrayCount(this.value) placeholder="Enter Array of Word">
+      <input type="text" onchange=SearchArrayCountInput(this.value) placeholder="Enter Array of Word">
+      <button type='button' class="btn btn-info " onclick=SearchCount()>Find Cound</button>
+    </div>
+    <hr>
+    <div class="row displayCenterflex">
+      <input type="text" onchange=wordArrayCounter(this.value) placeholder="Enter Array of Word">
+      <button type='button' class="btn btn-success " onclick=wordCounter()>Find Count</button>
+    </div>
+
+  </div><br>
+
+</body>
+<script src="index.js">
+</script>
+
+</html>
